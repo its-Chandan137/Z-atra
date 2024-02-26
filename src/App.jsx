@@ -1,15 +1,32 @@
 import React from 'react'
+import {lazy,suspense} from 'react'
 import './styles/App.css'
-import Header from './components/common/Header'
-import { menulists } from './assets/data/data'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {Layout, Home} from './router';
+// const Login = lazy(()=> import('./components/common/Login'))
+import { Login } from './components/common/Login';
+import {Register} from './components/Register';
 
-function App() {
+export const App=()=> {
   return (
     <div>
-      <Header/>
+      <BrowserRouter>
+      <Routes>
+        <Route 
+          path='/'
+          element={
+            <Layout>
+              <Home index/>
+            </Layout>
+          }
+        />
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/Register' element={<Register/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
     
   )
-}
+};
 
 export default App
