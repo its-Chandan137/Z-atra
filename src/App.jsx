@@ -6,6 +6,7 @@ import {Layout, Home} from './router';
 // const Login = lazy(()=> import('./components/common/Login'))
 import { Login } from './components/common/Login';
 import {Register} from './components/Register';
+import Confirmed from './components/common/Confirmed';
 
 export const App=()=> {
   return (
@@ -22,6 +23,7 @@ export const App=()=> {
         />
         <Route path='/Login' element={<Login/>}/>
         <Route path='/Register' element={<Register/>}/>
+        <Route path= '/Register/successful' element={<Confirmed/>}/>
       </Routes>
       </BrowserRouter>
     </div>
