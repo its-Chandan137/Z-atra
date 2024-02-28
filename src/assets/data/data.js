@@ -6,12 +6,12 @@ export const menulists = [
     },
     {
         id: 2,
-        path: '/men-section',
+        path: '/ForMen',
         link: 'For-Men'
     },
     {
         id: 3,
-        path: '/women-section',
+        path: '/ForWomen',
         link: 'For-Women'
     },
     {

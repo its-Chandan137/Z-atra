@@ -38,8 +38,8 @@ export const Header = () =>{
                     <div className='relative z-20'>
                     <FaOpencart size={23} className=" fill-white"/>
 
-                    <div className="absolute -top-2 -right-1.5">
-                      <Badges color="bg-primary-green" className="text-black">0</Badges>
+                    <div className="absolute -top-3 -right-1.5">
+                      <Badges color="bg-sky-400">0</Badges>
                     </div>
                     </div>
                   </div>

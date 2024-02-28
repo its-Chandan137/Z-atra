@@ -162,7 +162,7 @@ export const Register=()=> {
 
             <input onChange={handlePassword} type="password" id="password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required/>
 
-            {passwordError? <p className="mt-2 text-sm text-red-600 dark:text-red-500 flex gap-2"> Password required!<div className="font-small flex justify-center pl-0.5 w-5 h-5 rounded-full text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 i-button" data-tooltip="Password length should be minimum 8 characters long, should contain a special character, a number and a number and an uppercase letter">!</div></p> : ""}
+            {passwordError? <p className="mt-2 text-sm text-red-600 dark:text-red-500 flex gap-2"> Password required!<div className="font-small flex justify-center pl-0.5 w-5 h-5 rounded-full text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 i-button" data-tooltip="Password length should be minimum 8 characters long, should contain a special character, a number and an uppercase letter">!</div></p> : ""}
 
         </div>
 

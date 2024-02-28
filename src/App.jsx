@@ -7,20 +7,18 @@ import {Layout, Home} from './router';
 import { Login } from './components/common/Login';
 import {Register} from './components/Register';
 import Confirmed from './components/common/Confirmed';
+import {ForMen} from './components/common/product/ForMen';
+import {ForWomen} from './components/common/product/ForWomen';
 
 export const App=()=> {
   return (
     <div>
       <BrowserRouter>
       <Routes>
-        <Route 
-          path='/'
-          element={
-            <Layout>
-              <Home index/>
-            </Layout>
-          }
-        />
+        <Route path='/'element={<Layout><Home index/></Layout>}/>
+        <Route path='/ForMen'element={<Layout><ForMen/></Layout>}/>
+        <Route path='/ForWomen'element={<Layout><ForWomen/></Layout>}/>
+
         <Route path='/Login' element={<Login/>}/>
         <Route path='/Register' element={<Register/>}/>
         <Route path= '/Register/successful' element={<Confirmed/>}/>
