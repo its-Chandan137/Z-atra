@@ -50,3 +50,26 @@ html,body{
     top: 0;
     border-bottom: 1px solid white;
 }
+
+.i-button:hover::before{
+    --scale: 1;
+}
+
+.i-button::before,
+.i-button::after{
+    --scale: 0;
+    position: absolute;
+    transform: translate(55%,15%) scale(var(--scale));
+    transition: 0.15s ease;
+}
+
+.i-button::before{
+    content: attr(data-tooltip);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 0px 10px 10px 10px;
+    color: black;
+    border: 1px solid blue;
+}
+
