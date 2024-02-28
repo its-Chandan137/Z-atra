@@ -3,7 +3,6 @@ import { menulists } from '../.././assets/data/data'
 import { CustomeLink,CustomeNavLink, Badges } from './CustomComponents'
 import { IoIosSearch } from "react-icons/io";
 import { FaOpencart } from "react-icons/fa6";
-import { list } from 'postcss';
 // import LogoImg from './src/assets/common/LogoImg.png'
 
 

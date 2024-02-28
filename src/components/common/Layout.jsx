@@ -6,7 +6,7 @@ export const Layout=({children}) =>{
   return (
     <div>
         <Header/>
-        <main style={{minHeight : "80vh"}} className='bg-black'>{children}</main>
+        <main style={{minHeight : "80vh"}} className='bg-black flex justify-center'>{children}</main>
         <h2 className='bg-black'>Footer</h2>
     </div>
   )

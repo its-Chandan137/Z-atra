@@ -9,6 +9,7 @@ import {Register} from './components/Register';
 import Confirmed from './components/common/Confirmed';
 import {ForMen} from './components/common/product/ForMen';
 import {ForWomen} from './components/common/product/ForWomen';
+import { ProductList } from './components/common/product/ProductList';
 
 export const App=()=> {
   return (
