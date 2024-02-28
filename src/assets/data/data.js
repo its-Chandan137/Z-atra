@@ -6,13 +6,13 @@ export const menulists = [
     },
     {
         id: 2,
-        path: '/shop',
-        link: 'Shop'
+        path: '/men-section',
+        link: 'For-Men'
     },
     {
         id: 3,
-        path: '/blog',
-        link: 'Blog'
+        path: '/women-section',
+        link: 'For-Women'
     },
     {
         id: 4,
