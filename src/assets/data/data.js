@@ -54,9 +54,9 @@ export const listedProducts = [
         title: "NIVEA body lotion part 2",
         description: "Enhance glow and keep skin moisturized",
         images: [
-            {image: "../image/product/NIVEA lotion.jpg"}
+            {image: "../image/product/FaceWash.webp"}
         ],
-        discount: 10,
+        discount: 12,
         rating: 2.5,
         featured: true,
         price: [
@@ -71,9 +71,9 @@ export const listedProducts = [
         title: "NIVEA body lotion part 3",
         description: "3rd product",
         images: [
-            {image: "../image/product/NIVEA lotion.jpg"}
+            {image: "../image/product/D-TAN pack.webp"}
         ],
-        discount: 10,
+        discount: 16,
         rating: 2.5,
         featured: true,
         price: [
@@ -88,9 +88,9 @@ export const listedProducts = [
         title: "NIVEA body lotion part 4",
         description: "moisturized",
         images: [
-            {image: "../image/product/NIVEA lotion.jpg"}
+            {image: "../image/product/Hair Spa Kit.webp"}
         ],
-        discount: 10,
+        discount: 19,
         rating: 2.5,
         featured: true,
         price: [

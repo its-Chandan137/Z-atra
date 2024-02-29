@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
 const CustomeNavLink = ({ href, className, children}) => {
-  const linkStyles = "text-[15px font-medium cursor-pointer list-none text-green-500 dark:text-green-500"
-  const linkStyles2 = "text-[15px font-medium cursor-pointer list-none text-gray-900 dark:text-white"
+  const linkStyles2 = "text-[15px font-medium cursor-pointer list-none text-green-500 dark:text-green-500"
+  const linkStyles = "text-[15px font-medium cursor-pointer list-none text-gray-900 dark:text-white"
   return(
     <NavLink to={href}
       className={({isActive})=> 
       isActive
-      ? `${className} ${linkStyles}` 
-      : `${className} ${linkStyles2}`
+      ? `${className} ${linkStyles2}` 
+      : `${className} ${linkStyles}`
       }>
         {children}
     </NavLink>
@@ -18,9 +18,9 @@ const CustomeNavLink = ({ href, className, children}) => {
 
 
 
-const CustomeLink = ({ className, children}) => {
+const CustomeLink = ({ href,className, children}) => {
   const linkStyles = "text-[15px font-medium cursor-pointer list-none block text-gray-900"
-  return <NavLink className={ `${className} ${linkStyles}`}>
+  return <NavLink to={href} className={ `${className} ${linkStyles}`}>
           {children}
         </NavLink>
 }
