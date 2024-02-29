@@ -4,7 +4,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 export const ProductCard = (
     {
         id,
-        key,
         title,
         description,
         images,
@@ -19,7 +18,7 @@ export const ProductCard = (
     const navigate = useNavigate()
   return (
     <>
-        <div className="productCard bg-white h-full relative">
+        <div className="productCard bg-white h-full relative rounded-md">
             <div className="images h-72 relative">
                 {images.map((cover, i)=>(
                     <img 

@@ -18,7 +18,7 @@ export const App=()=> {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/'element={<Layout><Home index/></Layout>}/>
+        <Route path='/Home'element={<Layout><Home index/></Layout>}/>
         <Route path='/ForMen'element={<Layout><ForMen/></Layout>}/>
         <Route path='/ForWomen'element={<Layout><ForWomen/></Layout>}/>
         <Route path='/product-details/:productId' element={<Layout><ItemDetail/></Layout>}/>

@@ -1,7 +1,7 @@
 export const menulists = [
     {
         id: 1,
-        path: '/',
+        path: '/Home',
         link: 'home'
     },
     {
@@ -21,13 +21,13 @@ export const menulists = [
     },
     {
         id: 5,
-        path: '/services',
-        link: 'Servicces'
+        path: '/contact',
+        link: 'Contact'
     },
     {
         id: 6,
-        path: '/contact',
-        link: 'Contact'
+        path: '/Cart',
+        link: 'cart'
     },
 ];
 

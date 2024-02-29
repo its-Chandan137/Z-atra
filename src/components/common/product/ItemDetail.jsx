@@ -21,7 +21,7 @@ export const ItemDetail = () => {
   }
   return (
     <>
-      <section className="container mt-32 h-auto flex">
+      <section style={{minHeight : "80vh"}} className='container mt-20 flex justify-center items-center relative'>
         <div className="contain rounded-lg flex overflow-hidden">
           <div
             className="flex justify-center w-80 bg-white max-h-fit py-5"
