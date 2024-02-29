@@ -80,7 +80,7 @@ export const Login = () => {
     <div className="container1">
         <div className="nav flex items-center justify-center">
             <div>
-                <CustomeNavLink href='/'><img src='src/assets/common/Z-atra.png' alt="L-o-g-o" className='h-10 cursor-pointer'/></CustomeNavLink>
+                <CustomeNavLink href='/'><img src='../image/product/Z-atra.png' alt="L-o-g-o" className='h-10 cursor-pointer'/></CustomeNavLink>
             </div>
         </div>
 

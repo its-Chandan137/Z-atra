@@ -14,7 +14,7 @@ export const Header = () =>{
               <nav className='p-4 flex justify-between item-center relative'>
                   <div className='flex item-center gap-14'>
                     <div>
-                      <CustomeNavLink href='/'><img src='src/assets/common/Z-atra.png' alt="L-o-g-o" className='h-10 cursor-pointer'/></CustomeNavLink>
+                      <CustomeNavLink href='/'><img src='../image/product/Z-atra.png' alt="L-o-g-o" className='h-10 cursor-pointer'/></CustomeNavLink>
                     </div>
                   </div>
                 <div className="hidden lg:flex item-center justify-between gap-8">
