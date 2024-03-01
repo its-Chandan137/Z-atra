@@ -1,5 +1,7 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { NavLink, useNavigate } from "react-router-dom";
+import { CartActions } from '../../../redux/slice/cartSlice';
 
 export const ProductCard = (
     {
@@ -14,6 +16,12 @@ export const ProductCard = (
         color,
     }
 ) => {
+    const dispatch = useDispatch()
+
+    const discountPrice = price[0].value - (price[0].value * discount) / 100;
+    const addToCart = () => {
+        dispatch(CartActions.addToCart({id,title,price: discountPrice,images}))
+    }
 
     const navigate = useNavigate()
   return (
@@ -40,6 +48,7 @@ export const ProductCard = (
             </div>
             <div className="overlay flex items-center gap-2 justify-center absolute bottom-0 m-5 right-0 left-0">
                 <button  onClick={()=>navigate(`/product-details/${id}`)} className='quick-view-btn product-btn bg-black h-8 w-36'>Quick View</button>
+                <button  onClick={addToCart} className='quick-view-btn product-btn bg-black h-8 w-36'>To Cart</button>
             </div>
         </div>
     </>

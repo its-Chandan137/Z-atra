@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { listedProducts } from "../../../assets/data/data";
 
+
 export const ItemDetail = () => {
     const navigate = useNavigate()
 
