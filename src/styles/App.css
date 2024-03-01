@@ -73,3 +73,64 @@ html,body{
     color: black;
     border: 1px solid blue;
 }
+
+.cartTabx{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.879);
+    color: black;
+    position: fixed;
+    top: 5rem;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s ease;
+
+}
+
+body.showcart .cartTabx{
+    right: 0;
+    transition: 0.7s ease;
+}
+
+.cartTabx h2{
+    padding: 20px;
+    font-weight: 300;
+}
+
+.cartTabx .btnx{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.cartTabx .btnx button{
+    background-color: yellow;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: black
+}
+
+.closex{
+    background-color: white;
+}
+
+
+.listCartx{
+    overflow: auto;
+}
+
+.quantityx span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantityx span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}

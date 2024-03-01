@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { listedProducts } from "../../../assets/data/data";
+import { useDispatch } from "react-redux";
+import { CartActions } from "../../../redux/slice/cartSlice";
 
 
 export const ItemDetail = () => {
@@ -20,6 +22,15 @@ export const ItemDetail = () => {
   if (!product) {
     return <div>Product Not Found</div>;
   }
+
+  const dispatch = useDispatch()
+
+  const discountPrice = price[0].value - (price[0].value * discount) / 100;
+  const addToCart = () => {
+      dispatch(CartActions.addToCart({id,title,price: discountPrice,images}))
+  }
+
+
   return (
     <>
       <section style={{minHeight : "80vh"}} className='container mt-20 flex justify-center items-center relative'>
@@ -55,8 +66,8 @@ export const ItemDetail = () => {
               {description && (
                 <p className="text-black">Description: {product.description}</p>
               )}
-              <NavLink to={`/Cart/${id}`}>
-                <button className="h-10 p-2 bg-black rounded-md mt-5 w-20">To Cart</button>
+              <NavLink to={`/Cart`}>
+                <button onClick={addToCart}  className="h-10 p-2 bg-black rounded-md mt-5 w-20">To Cart</button>
               </NavLink>
             </div>
           </div>

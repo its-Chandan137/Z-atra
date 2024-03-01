@@ -25,7 +25,7 @@ export const App=()=> {
         <Route path='/product-details/:productId' element={<Layout><ItemDetail/></Layout>}/>
 
 
-        <Route path='/Cart/:productId' element={<Cart/>}/>
+        <Route path='/Cart' element={<Layout><Cart/></Layout>}/>
         <Route path='/Login' element={<Login/>}/>
         <Route path='/ProductDetail' element={<DetailedProduct/>}/>
         <Route path='/Register' element={<Register/>}/>
