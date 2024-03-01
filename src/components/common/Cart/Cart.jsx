@@ -62,6 +62,7 @@ export const Cart = () => {
 
 export const CartProduct = ({ id, cover, name, price, quantity }) => {
   const dispatch = useDispatch();
+  const totalQuantity = useSelector(selectTotalQuantity);
 
   const removeCartItem = () => {
     dispatch(CartActions.removeFromAllCart(id));
